@@ -1,4 +1,3 @@
-/* Add your CSS to this file */
 body {
     margin: 0;
     font-size: 16px;
@@ -17,8 +16,8 @@ header .container {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    background: white;   
-    font-size: 18px;       
+    background: white;  
+    font-size: 18px;
 }
 
 header nav ul {
@@ -31,8 +30,6 @@ header nav ul {
 
 header nav a {
     text-decoration: none;
-    color: #000000;  
-    font: 18px;  
     color: #6b7280;
                  
 }
@@ -41,12 +38,24 @@ header nav a:hover{
     color: #5A67D8;
 }
 
-.overview-hero .container{
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.overview-hero{
     background: #E2E8F0;
+}
+
+.overview-hero .container{
     display: flex;
     align-items: center;
-    gap: 40px;
-    padding: 20px 0;
+    gap: 50px;
+    padding: 30px 60px;
+}
+
+.overview-hero .container p{
+    margin-right: 70px;
 }
 
 .cards{
@@ -58,15 +67,30 @@ header nav a:hover{
 .card{
     background: white;
     text-align: left;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    box-shadow:3px 2px 8px rgba(0,0,0,0.1);
     padding: 10px;
+    border: 1px solid #ffffff;
+    border-color: #E2E8F0;
+    cursor: pointer;
+}
+
+.card h3{
+    color: #48BB78;
+    font-size: 21px;
 }
 
 .card img{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 5px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.3);
+
 }
 
 .cards .card:nth-child(1) img {
@@ -83,29 +107,43 @@ header nav a:hover{
 }
 
 .overview-hero-image{
-    width: 70%;
-    min-height: 300px;
     background-image: url("images/hero.jpg");
-    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 400px;
+    height: 200px;
+    background-size: contain;
     background-position: center;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.testing{
+    background: #4A5568;
 }
 
 .testing .container {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    padding: 30px;
+    margin-top: 25px;
+    padding: 70px 100px;
 }
 
 .testing-desciption{
     max-width: 65%;
+    color: white;
 }
 
 .cta .btn{
-    padding: 12px 25px;
-    background: #0077cc;
-    color: #fff;
+    margin-right: 80px;
+}
+
+.cta .btn,  .cta .btn a{
+    padding: 12px 30px;
+    background: #48BB78;
+    color: white;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .stories article{
@@ -115,17 +153,25 @@ header nav a:hover{
     margin-bottom: 40px;
 }
 
+.stories h2, .stories article a{
+    color: #5A67D8;
+    text-decoration: none;
+}
+
+.article-body h3{
+    font-size: 18px;
+}
+
 .stories article:nth-child(2) img {
     content: url("images/Article1.jpg");  
-    width: 350px;
-    height: 150px;
-    margin-top: 40px;
-    object-fit: cover;
-    border-radius: 100px;
+
 }
 
 .stories article:nth-child(3) img {
     content: url("images/Article2.jpg");
+}
+
+.stories article img{
     width: 350px;
     height: 150px;
     margin-top: 40px;
@@ -134,17 +180,16 @@ header nav a:hover{
 }
 
 .newsletter{
-    padding: 50px 0;
-    margin-bottom: 0;
+    background: #48BB78;
+    padding: 10px 0px;
 }
 
 .newsletter .container {
-    max-width: 970px;
+    max-width: 960px;
     height: 250px;
     margin: 0 auto;
+    color: white;
     text-align: center;
-    padding-bottom: 0; 
-    background: #48BB78;
 }
 
 .newsletter h3{
@@ -177,22 +222,22 @@ header nav a:hover{
 
 .newsletter .btn {
     padding: 10px 40px;
-    background-color: #0077cc;
+    background-color: #5A67D8;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 
 .newsletter .message {
-    margin-top: 15px;  /* spacing below form */
+    margin-top: 15px;  
 }
 
 footer{
-    padding: 30px 0;
-    background: #eb3636;
-
+    background: #4A5568;
 }
 
 footer .container{
-    padding-left:100px;
+    padding:30px 100px;
+    color:white;
 }
