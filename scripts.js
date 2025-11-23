@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = emailInput.value.trim();
 
         if (email) {
-            messageDiv.innerHTML = "Thank you! Your email address <span>${email}</span> has been added to our mailing list XD";
+            messageDiv.innerHTML = `Thank you! Your email address <span>${email}</span> has been added to our mailing list!`;
         } else {
             messageDiv.textContent = "Please enter a valid email address.";
         }
